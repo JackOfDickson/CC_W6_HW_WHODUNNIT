@@ -1,6 +1,5 @@
-#### Episode 1
+// #### Episode 1
 
-```js
 const scenario = {
   murderer: 'Miss Scarlet',
   room: 'Library',
@@ -13,12 +12,11 @@ const declareMurderer = function() {
 
 const verdict = declareMurderer();
 console.log(verdict);
-```
-Murderer is Miss Scarlet, the const on scenario means that the data is accessible.
 
-#### Episode 2
+// Murderer is Miss Scarlet, the const on scenario means that the data is accessible.
+//  Episode 2
 
-```js
+
 const murderer = 'Professor Plum';
 
 const changeMurderer = function() {
@@ -32,12 +30,13 @@ const declareMurderer = function() {
 changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
-```
-Murderer is Professor Plum since the murder is a const it cannot be reassigned.
-Type error, trying to reassign a const variable
-#### Episode 3
 
-```js
+// Murderer is Professor Plum since the murder is a const it cannot be reassigned.
+// Type error, trying to reassign a const variable
+
+// #### Episode 3
+
+
 let murderer = 'Professor Plum';
 
 const declareMurderer = function() {
@@ -50,11 +49,11 @@ console.log('First Verdict: ', firstVerdict);
 
 const secondVerdict = `The murderer is ${murderer}.`;
 console.log('Second Verdict: ', secondVerdict);
-```
-Murderer in first verdict is Mrs. Peacock becausde the "let" in the declareMurderer function is within the scope of the function. Professor Plum is the second verdict since the scope of the "let murderer =" in the declareMurderer function does not affect the murderer value on the first line.
-#### Episode 4
 
-```js
+// Murderer in first verdict is Mrs. Peacock becausde the "let" in the declareMurderer function is within the scope of the function. Professor Plum is the second verdict since the scope of the "let murderer =" in the declareMurderer function does not affect the murderer value on the first line.
+// #### Episode 4
+
+
 let suspectOne = 'Miss Scarlet';
 let suspectTwo = 'Professor Plum';
 let suspectThree = 'Mrs. Peacock';
@@ -67,11 +66,11 @@ const declareAllSuspects = function() {
 const suspects = declareAllSuspects();
 console.log(suspects);
 console.log(`Suspect three is ${suspectThree}.`);
-```
-The suspects in the first console.log will be Miss Scarlet, Professor Plum and Colonel Mustard but in the second the third suspect would be Mrs. Peacock. The scope of the "let suspectThree" in the suspects function only changes suspectThree in the function and not in the rest of the script.
-#### Episode 5
 
-```js
+// The suspects in the first console.log will be Miss Scarlet, Professor Plum and Colonel Mustard but in the second the third suspect would be Mrs. Peacock. The scope of the "let suspectThree" in the suspects function only changes suspectThree in the function and not in the rest of the script.
+// #### Episode 5
+
+
 const scenario = {
   murderer: 'Miss Scarlet',
   room: 'Kitchen',
@@ -89,12 +88,12 @@ const declareWeapon = function() {
 changeWeapon('Revolver');
 const verdict = declareWeapon();
 console.log(verdict);
-```
-Verdict will be the weapon is the Revolver, even though scenario is a const the values of the keys in the object can still be changed.
-The object cannot be changed but the contents of the objects are muteable
-#### Episode 6
 
-```js
+// Verdict will be the weapon is the Revolver, even though scenario is a const the values of the keys in the object can still be changed.
+// The object cannot be changed but the contents of the objects are muteable
+// #### Episode 6
+
+
 let murderer = 'Colonel Mustard';
 
 const changeMurderer = function() {
@@ -114,11 +113,11 @@ const declareMurderer = function () {
 changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
-```
-The murderer is Mrs. White, the plotTwist function in the changeMurderer function is applied after the inital change to Mr. Green.
-#### Episode 7
 
-```js
+// The murderer is Mrs. White, the plotTwist function in the changeMurderer function is applied after the inital change to Mr. Green.
+// #### Episode 7
+
+
 let murderer = 'Professor Plum';
 
 const changeMurderer = function() {
@@ -144,11 +143,12 @@ const declareMurderer = function() {
 changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
-```
-Murder is Mr.Green, the let murderer in the plot twist function means the change only occurs within that function.
-#### Episode 8
 
-```js
+// Murder is Mr.Green, the let murderer in the plot twist function means the change only occurs within that function.
+
+// #### Episode 8
+
+
 const scenario = {
   murderer: 'Mrs. Peacock',
   room: 'Conservatory',
@@ -183,11 +183,12 @@ const declareWeapon = function() {
 changeScenario();
 const verdict = declareWeapon();
 console.log(verdict);
-```
-Murderer is Colonel Mustard and weapon is the Candle Stick. In the plotTwist the scanrio.room matched the arguement, so the scenrio.murderer is updated. Since the unexpectedOutcome if statement is now met the weapon is updated to candle stick.
-#### Episode 9
 
-```js
+// Murderer is Colonel Mustard and weapon is the Candle Stick. In the plotTwist the scanrio.room matched the arguement, so the scenrio.murderer is updated. Since the unexpectedOutcome if statement is now met the weapon is updated to candle stick.
+
+// #### Episode 9
+
+
 let murderer = 'Professor Plum';
 
 if (murderer === 'Professor Plum') {
@@ -200,5 +201,5 @@ const declareMurderer = function() {
 
 const verdict = declareMurderer();
 console.log(verdict);
-```
-Murderer is Professor Plum, the let murderer = Mrs.Peacock is only within the if statement.
+
+// Murderer is Professor Plum, the let murderer = Mrs.Peacock is only within the if statement.
