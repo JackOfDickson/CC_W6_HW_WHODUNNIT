@@ -1,16 +1,3 @@
-# Scope Homework: Who Dunnit
-
-### Learning Objectives
-
-- Understand function scope
-- Know the difference in between the let and const keywords
-
-## Brief
-
-Using your knowledge about scope and variable declarations in JavaScript, look at the following code snippets and predict what the output or error will be and why. Copy the following episodes into a JavaScript file and add comments under each one detailing the reason for your predicted output.
-
-### MVP
-
 #### Episode 1
 
 ```js
@@ -47,6 +34,7 @@ const verdict = declareMurderer();
 console.log(verdict);
 ```
 Murderer is Professor Plum since the murder is a const it cannot be reassigned.
+Type error, trying to reassign a const variable
 #### Episode 3
 
 ```js
@@ -103,6 +91,7 @@ const verdict = declareWeapon();
 console.log(verdict);
 ```
 Verdict will be the weapon is the Revolver, even though scenario is a const the values of the keys in the object can still be changed.
+The object cannot be changed but the contents of the objects are muteable
 #### Episode 6
 
 ```js
@@ -213,6 +202,3 @@ const verdict = declareMurderer();
 console.log(verdict);
 ```
 Murderer is Professor Plum, the let murderer = Mrs.Peacock is only within the if statement.
-### Extensions
-
-Make up your own episode!
